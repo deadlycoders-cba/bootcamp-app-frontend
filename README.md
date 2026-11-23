@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bootcamp App – Frontend
 
-## Getting Started
+This repository contains the latest version of the bootcamp application frontend, including several additions and improvements, such as the ability to edit participant details.
 
-First, run the development server:
+This is not a complete application, but it provides a solid starting point for further development and enhancement.
 
-```bash
+## Current Features
+
+The frontend currently includes:
+
+- **Login page:** Allows users to log in to the application.
+- **Participants page:** Displays a list of all participants.
+- **Edit participant:** Allows users to view and edit a participant's full details by clicking the pen icon.
+- **Authentication:** Includes basic login and logout functionality.
+
+## Potential Improvements and Future Features
+
+There are several features and improvements that could be added, including:
+
+- **Add participant:** Allow users to add new participants.
+- **Delete participant:** Allow users to remove participants.
+- **User roles and permissions:** Support different user roles with different levels of access and permissions.
+- **UI/UX improvements:** Develop a more creative, polished and user-friendly interface.
+- **Additional features:** Extend the application with further functionality as requirements evolve.
+
+This version provides a foundation for exploring and extending a full-stack application, particularly around frontend development, authentication, API integration and CRUD operations.
+
+---
+
+The app currently includes a single user. Log in using the following credentials:
+email: jordan@example.com
+password: password123
+
+To start the server run:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To view in the browser:
+localhost:3000
