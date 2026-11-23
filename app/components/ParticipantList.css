@@ -1,0 +1,179 @@
+/* ── Section wrapper ── */
+.participant-section {
+  padding: 32px 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.participant-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1B4F72;
+  margin-bottom: 24px;
+}
+
+/* ── Grid layout ── */
+.participant-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .participant-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .participant-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ── Participant card — matches .card in ProfileCard.css ── */
+.participant-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.participant-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.13);
+}
+
+/* ── Avatar ── */
+.participant-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #1B4F72;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+/* ── Name — matches .card h1 ── */
+.participant-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+/* ── Email — matches .card h2 ── */
+.participant-card p {
+  margin: 0 0 8px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ── Stream badge ── */
+.participant-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: fit-content;
+  margin-bottom: 4px;
+}
+
+.badge-engineering {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+}
+
+.badge-data {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.badge-cyber {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+/* ── Active status — matches .card a colour ── */
+.participant-status-dot {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+}
+
+.participant-status-dot::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.participant-status-dot.active {
+  color: #2563eb;
+}
+
+.participant-status-dot.active::before {
+  background-color: #2563eb;
+}
+
+.participant-status-dot.inactive {
+  color: #666;
+}
+
+.participant-status-dot.inactive::before {
+  background-color: #ddd;
+}
+
+/* ── Loading and error states ── */
+.participant-status-msg {
+  text-align: center;
+  padding: 48px;
+  color: #666;
+  font-size: 1rem;
+}
+
+.participant-error {
+  color: #DC2626;
+}
+
+/* ── Edit button ── */
+.participant-card {
+  position: relative;
+}
+
+.edit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+  color: #666;
+
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background: #f0f0f0;
+  color: #222;
+}
